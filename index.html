@@ -4,245 +4,258 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Hoja de Vida</title>
-    <link rel="stylesheet" href="Hojadevida.css">
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <img src="Fotodehojadevida.jpeg" alt="Foto de perfil" class="foto-perfil" onclick="mostrarImagen()">
-            <div class="info">
-                <h1>Jesus Elian Palacios Contreras</h1>
-                <p>Desarrollador Web | Programador</p>
-                <p>Email: eliancontreras089@gmail.com | Tel: 3176293739</p>
-                <a href="https://github.com/Elian318511" target="_blank">GitHub</a> |
-                <a href="https://linkedin.com/in/elian-contreras-5a6619347/" target="_blank">LinkedIn</a>
-            </div>
+
+<header>
+    <div class="header-container">
+        <img src="Fotodehojadevida.jpeg" alt="Foto de perfil" class="foto-perfil" onclick="mostrarImagen()">
+        <div class="info">
+            <h1>Jesus Elian Palacios Contreras</h1>
+            <p>Desarrollador Web | Programador</p>
+            <p>Email: eliancontreras089@gmail.com | Tel: 3176293739</p>
+            <a href="https://github.com/Elian318511" target="_blank">GitHub</a> |
+            <a href="https://linkedin.com/in/elian-contreras-5a6619347/" target="_blank">LinkedIn</a>
         </div>
-    </header>
-
-    <section id="perfil">
-        <h2>Perfil Profesional</h2>
-        <p>Soy un programador apasionado con experiencia en desarrollo web, especializado en HTML, CSS, JavaScript y PHP.</p>
-    </section>
-
-    <section id="habilidades">
-        <h2>Habilidades</h2>
-        <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>PHP, MySQL</li>
-            <li>Lógica de programación</li>
-            <li>Git, GitHub</li>
-            <li>Inglés básico</li>
-            <li>Chatgpt</li>
-        </ul>
-    </section>
-
-    <section id="proyectos">
-        <h2>Proyectos</h2>
-        <p><strong>Pagina web de restaurante</strong> - Un sitio web de un restaurante para ofrecer servicios de comida  (PHP, MySQL).</p>
-        <p><strong>Portfolio </strong> - algunos proyectos de frontend como la veterinaria, reproductor mp3, calculadora y algunas pruebas de código HTML, CSS y JS.</p>
-    </section>
-
-    <section id="educacion">
-        <h2>Educación</h2>
-        <p>Curso de Programación - SENA</p>
-    </section>
-
-    <footer>
-        <p>© 2025 Desarrollador Web</p>
-        <ul class="social-links">
-            <li>
-                <a href="https://www.instagram.com/elian_contreras123/" target="_blank">
-                    <img src="iconodeinstagram.png" alt="Instagram"> Instagram
-                </a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/photo/?fbid=270744955921434&set=a.270744969254766/" target="_blank">
-                    <img src="iconodefacebook.png" alt="Facebook"> Facebook
-                </a>
-            </li>
-            <li>
-                <a href="https://www.tiktok.com/@eliancontreras87" target="_blank">
-                    <img src="iconodetiktok.png" alt="TikTok"> TikTok
-                </a>
-            </li>
-        </ul>
-    </footer>
-
-    <!-- Modal para la imagen grande -->
-    <div id="modal" class="modal">
-        <span class="cerrar" onclick="cerrarImagen()">&times;</span>
-        <img class="modal-contenido" id="imagenGrande">
     </div>
+</header>
 
-    <script>
-        function mostrarImagen() {
-            var modal = document.getElementById("modal");
-            var img = document.getElementById("imagenGrande");
+<section id="perfil">
+    <h2>Perfil Profesional</h2>
+    <p>
+        Soy un programador apasionado con experiencia en desarrollo web, especializado en HTML, CSS, JavaScript y PHP. 
+        Me enfoco en crear aplicaciones dinámicas, interactivas y en tiempo real.
+    </p>
+</section>
 
-            img.src = document.querySelector(".foto-perfil").src;
-            modal.style.display = "flex";  
-        }
+<section id="habilidades">
+    <h2>Habilidades</h2>
+    <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>PHP, MySQL</li>
+        <li>Lógica de programación</li>
+        <li>Git, GitHub</li>
+        <li>Inglés básico</li>
+        <li>ChatGPT</li>
+    </ul>
+</section>
 
-        function cerrarImagen() {
-            document.getElementById("modal").style.display = "none";
-        }
-    </script>
+<section id="proyectos">
+    <h2>Proyectos</h2>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+    <p>
+        <strong>Red Social en Tiempo Real</strong> - Plataforma donde los usuarios pueden interactuar en salas, enviar mensajes en tiempo real y conectarse con otras personas. 
+        Proyecto enfocado en comunicación en vivo y experiencia de usuario dinámica.
+        <br>
+        <a href="https://cyan-ibis-409465.hostingersite.com/" target="_blank">
+            Ver proyecto en vivo
+        </a>
+    </p>
 
-        .header-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #2c3e50;
-            color: white;
-            padding: 20px;
-            flex-wrap: wrap; /* Para que no se desborde en pantallas pequeñas */
-        }
+    <p>
+        <strong>Portfolio</strong> - Proyectos de frontend como veterinaria, reproductor mp3, calculadora y prácticas con HTML, CSS y JavaScript.
+    </p>
+</section>
 
-        .info {
-            text-align: left;
-            margin-left: 15px;
-        }
+<section id="educacion">
+    <h2>Educación</h2>
+    <p>Curso de Programación - SENA</p>
+</section>
 
-        .foto-perfil {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            cursor: pointer;
-            border: 3px solid white;
-        }
+<footer>
+    <p>© 2025 Desarrollador Web</p>
 
-        header a {
-            color: #1abc9c;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    <ul class="social-links">
+        <li>
+            <a href="https://www.instagram.com/elian_contreras123/" target="_blank">
+                <img src="iconodeinstagram.png" alt="Instagram"> Instagram
+            </a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/photo/?fbid=270744955921434&set=a.270744969254766/" target="_blank">
+                <img src="iconodefacebook.png" alt="Facebook"> Facebook
+            </a>
+        </li>
+        <li>
+            <a href="https://www.tiktok.com/@eliancontreras87" target="_blank">
+                <img src="iconodetiktok.png" alt="TikTok"> TikTok
+            </a>
+        </li>
+    </ul>
+</footer>
 
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
+<!-- Modal para la imagen -->
+<div id="modal" class="modal">
+    <span class="cerrar" onclick="cerrarImagen()">&times;</span>
+    <img class="modal-contenido" id="imagenGrande">
+</div>
 
-        h2 {
-            color: #2c3e50;
-        }
+<script>
+function mostrarImagen() {
+    var modal = document.getElementById("modal");
+    var img = document.getElementById("imagenGrande");
 
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: #2c3e50;
-            color: white;
-        }
+    img.src = document.querySelector(".foto-perfil").src;
+    modal.style.display = "flex";  
+}
 
-        /* Estilos para el modal */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            justify-content: center;
-            align-items: center;
-        }
+function cerrarImagen() {
+    document.getElementById("modal").style.display = "none";
+}
+</script>
 
-        .modal-contenido {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 10px;
-        }
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
-        .cerrar {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            color: white;
-            font-size: 40px;
-            cursor: pointer;
-        }
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    flex-wrap: wrap;
+}
 
-        /* Estilos para el footer */
-        .social-links {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            padding: 0;
-        }
+.info {
+    text-align: left;
+    margin-left: 15px;
+}
 
-        .social-links li {
-            margin: 0 10px;
-            display: flex;
-            align-items: center;
-        }
+.foto-perfil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 3px solid white;
+}
 
-        .social-links li a {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            color: white;
-            font-size: 14px;
-        }
+header a {
+    color: #1abc9c;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        .social-links li a img {
-            width: 24px;
-            height: 24px;
-            margin-right: 5px;
-            transition: transform 0.3s;
-        }
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
 
-        .social-links li a:hover img {
-            transform: scale(1.1);
-        }
+h2 {
+    color: #2c3e50;
+}
 
-        /* Media Queries para pantallas pequeñas (tabletas y móviles) */
-        @media (max-width: 768px) {
-            .header-container {
-                flex-direction: column;
-                text-align: center;
-            }
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #2c3e50;
+    color: white;
+}
 
-            .foto-perfil {
-                margin-bottom: 10px;
-                width: 120px;
-                height: 120px;
-            }
+.social-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
 
-            .info h1 {
-                font-size: 24px;
-            }
+.social-links li {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
 
-            section {
-                padding: 15px;
-                margin: 15px;
-            }
+.social-links li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
 
-            .social-links {
-                flex-direction: column;
-            }
+.social-links li a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    transition: transform 0.3s;
+}
 
-            .social-links li {
-                margin: 5px 0;
-            }
+.social-links li a:hover img {
+    transform: scale(1.1);
+}
 
-            .social-links li a {
-                font-size: 16px;
-            }
-        }
-    </style>
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contenido {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.cerrar {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foto-perfil {
+        margin-bottom: 10px;
+        width: 120px;
+        height: 120px;
+    }
+
+    .info h1 {
+        font-size: 24px;
+    }
+
+    section {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .social-links {
+        flex-direction: column;
+    }
+
+    .social-links li {
+        margin: 5px 0;
+    }
+
+    .social-links li a {
+        font-size: 16px;
+    }
+}
+</style>
+
 </body>
 </html>
