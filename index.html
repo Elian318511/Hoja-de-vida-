@@ -1,268 +1,220 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Hoja de Vida</title>
-</head>
-<body>
-
-<header>
-    <div class="header-container">
-        <img src="Fotodehojadevida.jpeg" alt="Foto de perfil" class="foto-perfil" onclick="mostrarImagen()">
-        <div class="info">
-            <h1>Jesus Elian Palacios Contreras</h1>
-            <p>Desarrollador Web | Programador | Aplicando IA moderna</p>
-            <p>Email: eliancontreras089@gmail.com | Tel: 3176293739</p>
-            <a href="https://github.com/Elian318511" target="_blank">GitHub</a> |
-            <a href="https://linkedin.com/in/elian-contreras-5a6619347/" target="_blank">LinkedIn</a>
-        </div>
-    </div>
-</header>
-
-<section id="perfil">
-    <h2>Perfil Profesional</h2>
-    <p>
-        Soy un desarrollador web apasionado con experiencia en aplicaciones dinámicas e interactivas, 
-        especializado en HTML, CSS, JavaScript, PHP y MySQL. 
-        Además, integro tecnologías modernas de <strong>Inteligencia Artificial (IA)</strong> y <strong>ChatGPT</strong> 
-        para optimizar procesos, automatizar tareas y mejorar la experiencia del usuario.
-    </p>
-</section>
-
-<section id="habilidades">
-    <h2>Habilidades</h2>
-    <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>PHP, MySQL</li>
-        <li>Lógica de programación</li>
-        <li>Git, GitHub</li>
-        <li>ChatGPT / IA moderna</li>
-        <li>Integración de IA en aplicaciones web</li>
-        <li>Inglés básico</li>
-    </ul>
-</section>
-
-<section id="proyectos">
-    <h2>Proyectos</h2>
-
-    <p>
-        <strong>Red Social en Tiempo Real</strong> - Plataforma donde los usuarios pueden interactuar en salas, enviar mensajes en tiempo real y conectarse con otras personas. 
-        Proyecto enfocado en comunicación en vivo y experiencia de usuario dinámica.
-        <br>
-        <a href="https://cyan-ibis-409465.hostingersite.com/" target="_blank">
-            Ver proyecto en vivo
-        </a>
-    </p>
-
-    <p>
-        <strong>Portfolio</strong> - Proyectos de frontend como veterinaria, reproductor mp3, calculadora y prácticas con HTML, CSS y JavaScript.
-    </p>
-
-    <p>
-        <strong>Asistente Inteligente con IA</strong> - Aplicación web que utiliza IA para responder preguntas, generar contenido y automatizar tareas, mejorando la interacción del usuario y mostrando habilidades modernas en desarrollo web.
-    </p>
-</section>
-
-<section id="educacion">
-    <h2>Educación</h2>
-    <p>Curso de Programación - SENA</p>
-</section>
-
-<footer>
-    <p>© 2026 Desarrollador Web | Aplicando tecnologías modernas de IA</p>
-
-    <ul class="social-links">
-        <li>
-            <a href="https://www.instagram.com/elian_contreras123/" target="_blank">
-                <img src="iconodeinstagram.png" alt="Instagram"> Instagram
-            </a>
-        </li>
-        <li>
-            <a href="https://www.facebook.com/photo/?fbid=270744955921434&set=a.270744969254766/" target="_blank">
-                <img src="iconodefacebook.png" alt="Facebook"> Facebook
-            </a>
-        </li>
-        <li>
-            <a href="https://www.tiktok.com/@eliancontreras87" target="_blank">
-                <img src="iconodetiktok.png" alt="TikTok"> TikTok
-            </a>
-        </li>
-    </ul>
-</footer>
-
-<!-- Modal para la imagen -->
-<div id="modal" class="modal">
-    <span class="cerrar" onclick="cerrarImagen()">&times;</span>
-    <img class="modal-contenido" id="imagenGrande">
-</div>
-
-<script>
-function mostrarImagen() {
-    var modal = document.getElementById("modal");
-    var img = document.getElementById("imagenGrande");
-
-    img.src = document.querySelector(".foto-perfil").src;
-    modal.style.display = "flex";  
-}
-
-function cerrarImagen() {
-    document.getElementById("modal").style.display = "none";
-}
-</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hoja de Vida - Elian Contreras</title>
 
 <style>
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    background: #f5f7fa;
     color: #333;
 }
 
-.header-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #2c3e50;
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: white;
-    padding: 20px;
-    flex-wrap: wrap;
+    padding: 30px 20px;
+    text-align: center;
 }
 
-.info {
-    text-align: left;
-    margin-left: 15px;
-}
-
-.foto-perfil {
-    width: 100px;
-    height: 100px;
+header img {
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    cursor: pointer;
-    border: 3px solid white;
+    border: 4px solid white;
+    margin-bottom: 10px;
 }
 
-header a {
-    color: #1abc9c;
+header h1 {
+    margin: 10px 0 5px;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* SECTIONS */
+.section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+    color: #2a5298;
+    margin-bottom: 10px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+a {
+    color: #2a5298;
     text-decoration: none;
     font-weight: bold;
 }
 
-section {
-    max-width: 800px;
-    margin: 20px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    color: #2c3e50;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #2c3e50;
+.badge {
+    display: inline-block;
+    background: #2a5298;
     color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 3px;
+    font-size: 12px;
 }
 
-.social-links {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-}
-
-.social-links li {
-    margin: 0 10px;
-    display: flex;
-    align-items: center;
-}
-
-.social-links li a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-    font-size: 14px;
-}
-
-.social-links li a img {
-    width: 24px;
-    height: 24px;
-    margin-right: 5px;
-    transition: transform 0.3s;
-}
-
-.social-links li a:hover img {
-    transform: scale(1.1);
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
-}
-
-.modal-contenido {
-    max-width: 90%;
-    max-height: 90%;
-    border-radius: 10px;
-}
-
-.cerrar {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    color: white;
-    font-size: 40px;
-    cursor: pointer;
-}
-
-@media (max-width: 768px) {
-    .header-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .foto-perfil {
-        margin-bottom: 10px;
-        width: 120px;
-        height: 120px;
-    }
-
-    .info h1 {
-        font-size: 24px;
-    }
-
-    section {
-        padding: 15px;
-        margin: 15px;
-    }
-
-    .social-links {
-        flex-direction: column;
-    }
-
-    .social-links li {
-        margin: 5px 0;
-    }
-
-    .social-links li a {
-        font-size: 16px;
+/* RESPONSIVE */
+@media(max-width: 768px){
+    .grid {
+        grid-template-columns: 1fr;
     }
 }
 </style>
+</head>
+
+<body>
+
+<header>
+    <img src="Fotodehojadevida.jpeg" alt="Foto perfil">
+    <h1>Jesús Elian Palacios Contreras</h1>
+    <p>💻 Desarrollador Web | IA | Automatización</p>
+    <p>📞 3176293739 | 📧 eliancontreras089@gmail.com</p>
+    <p>📍 Ibagué, Colombia</p>
+    <a href="https://github.com/Elian318511" target="_blank">GitHub</a> |
+    <a href="https://linkedin.com/in/elian-contreras-5a6619347/" target="_blank">LinkedIn</a>
+</header>
+
+<div class="container">
+
+<!-- PERFIL -->
+<div class="section">
+    <h2>👨‍💻 Perfil Profesional</h2>
+    <p>
+        Desarrollador web en formación en el SENA con enfoque en creación de aplicaciones modernas, 
+        integración de inteligencia artificial y automatización de procesos. 
+        Manejo tecnologías como HTML, CSS, JavaScript, PHP y MySQL.
+        <br><br>
+        Cuento con 3 años de experiencia en atención al cliente internacional, lo que fortalece mis habilidades 
+        de comunicación, resolución de problemas y trabajo en equipo.
+        <br><br>
+        Apasionado por la innovación, especialmente en el uso de IA para crear soluciones reales y eficientes.
+    </p>
+</div>
+
+<!-- HABILIDADES -->
+<div class="section grid">
+    <div>
+        <h2>⚙️ Habilidades Técnicas</h2>
+        <span class="badge">HTML</span>
+        <span class="badge">CSS</span>
+        <span class="badge">JavaScript</span>
+        <span class="badge">PHP</span>
+        <span class="badge">MySQL</span>
+        <span class="badge">Git & GitHub</span>
+        <span class="badge">APIs</span>
+        <span class="badge">ChatGPT / IA</span>
+        <span class="badge">Node.js (básico)</span>
+    </div>
+
+    <div>
+        <h2>🧠 Habilidades Blandas</h2>
+        <ul>
+            <li>Comunicación asertiva</li>
+            <li>Trabajo en equipo</li>
+            <li>Adaptabilidad</li>
+            <li>Proactividad</li>
+            <li>Empatía</li>
+            <li>Resolución de problemas</li>
+        </ul>
+    </div>
+</div>
+
+<!-- EXPERIENCIA -->
+<div class="section">
+    <h2>💼 Experiencia Laboral</h2>
+    <h3>Atención al Cliente Internacional</h3>
+    <p><strong>Duración:</strong> 3 años</p>
+    <ul>
+        <li>Gestión de clientes en entornos internacionales</li>
+        <li>Resolución de problemas y manejo de quejas</li>
+        <li>Uso de CRM y sistemas internos</li>
+        <li>Trabajo con equipos multiculturales</li>
+    </ul>
+</div>
+
+<!-- PROYECTOS -->
+<div class="section">
+    <h2>🚀 Proyectos Destacados</h2>
+
+    <p>
+        <strong>🔴 Red Social en Tiempo Real</strong><br>
+        Plataforma con chat en vivo, salas y comunicación en tiempo real usando tecnologías modernas.
+        <br>
+        <a href="https://cyan-ibis-409465.hostingersite.com/" target="_blank">Ver proyecto</a>
+    </p>
+
+    <p>
+        <strong>🤖 Asistente Inteligente con IA</strong><br>
+        Aplicación web que integra ChatGPT para automatizar tareas, responder preguntas y generar contenido.
+    </p>
+
+    <p>
+        <strong>🎨 Portfolio Web</strong><br>
+        Proyectos como veterinaria, reproductor MP3 y calculadora usando HTML, CSS y JavaScript.
+    </p>
+</div>
+
+<!-- EDUCACIÓN -->
+<div class="section">
+    <h2>🎓 Educación</h2>
+
+    <p><strong>Técnico en Programación y Servicios para la Nube</strong><br>
+    SENA (2024 - Actualidad)</p>
+
+    <p><strong>Bachiller Académico</strong><br>
+    Colegio Jorge Eliecer Gaitán (2017)</p>
+
+</div>
+
+<!-- IDIOMAS -->
+<div class="section">
+    <h2>🌎 Idiomas</h2>
+    <p>Inglés: Nivel básico (lectura y comunicación funcional)</p>
+</div>
+
+<!-- EXTRA -->
+<div class="section">
+    <h2>⚡ Información Adicional</h2>
+    <ul>
+        <li>Disponibilidad inmediata</li>
+        <li>Aprendizaje rápido y autónomo</li>
+        <li>Interés en desarrollo web, backend e IA</li>
+    </ul>
+</div>
+
+</div>
 
 </body>
 </html>
