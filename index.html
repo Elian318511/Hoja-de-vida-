@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -14,6 +13,7 @@ body {
     color: #333;
 }
 
+/* HEADER */
 header {
     background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: white;
@@ -28,6 +28,49 @@ header img {
     border: 4px solid white;
 }
 
+/* BOTONES */
+.social {
+    margin-top: 15px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    margin: 5px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.github {
+    background: #0d1117;
+}
+
+.github:hover {
+    background: #000;
+    transform: translateY(-2px);
+}
+
+.linkedin {
+    background: #0a66c2;
+}
+
+.linkedin:hover {
+    background: #004182;
+    transform: translateY(-2px);
+}
+
+.btn svg {
+    width: 18px;
+    height: 18px;
+    fill: white;
+}
+
+/* CONTENIDO */
 .container {
     max-width: 1000px;
     margin: 20px auto;
@@ -46,12 +89,14 @@ header img {
     color: #2a5298;
 }
 
+/* GRID */
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
+/* BADGES */
 .badge {
     display: inline-block;
     background: #2a5298;
@@ -62,6 +107,17 @@ header img {
     font-size: 12px;
 }
 
+ul {
+    padding-left: 20px;
+}
+
+a {
+    color: #2a5298;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* RESPONSIVE */
 @media(max-width: 768px){
     .grid {
         grid-template-columns: 1fr;
@@ -78,10 +134,43 @@ header img {
     <p>💻 Desarrollador Web | IA | Automatización</p>
     <p>📞 3176293739 | 📧 eliancontreras089@gmail.com</p>
     <p>📍 Ibagué, Colombia</p>
-    <p>
-        <a href="https://github.com/Elian318511" target="_blank" style="color:white;">GitHub</a> |
-        <a href="https://linkedin.com/in/elian-contreras-5a6619347/" target="_blank" style="color:white;">LinkedIn</a>
-    </p>
+
+    <div class="social">
+        <a href="https://github.com/Elian318511" target="_blank" class="btn github">
+            <svg viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38
+                0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94
+                -.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
+                -.01-.53.63-.01 1.08.58 1.23.82.72 1.21
+                1.87.87 2.33.66.07-.52.28-.87.51-1.07
+                -1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15
+                -.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82
+                .64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04
+                2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12
+                .51.56.82 1.27.82 2.15 0 3.07-1.87 3.75
+                -3.65 3.95.29.25.54.73.54 1.48
+                0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8
+                c0-4.42-3.58-8-8-8z"/>
+            </svg>
+            GitHub
+        </a>
+
+        <a href="https://linkedin.com/in/elian-contreras-5a6619347/" target="_blank" class="btn linkedin">
+            <svg viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.8 0-5 2.2-5 5v14c0
+                2.8 2.2 5 5 5h14c2.8 0 5-2.2
+                5-5v-14c0-2.8-2.2-5-5-5zm-11
+                19h-3v-10h3v10zm-1.5-11.3c-.97
+                0-1.75-.78-1.75-1.75s.78-1.75
+                1.75-1.75 1.75.78 1.75
+                1.75-.78 1.75-1.75
+                1.75zm13.5 11.3h-3v-5.6c0-1.34-.03-3.06-1.87-3.06-1.87
+                0-2.16 1.46-2.16 2.97v5.69h-3v-10h2.88v1.37h.04c.4-.75
+                1.37-1.54 2.82-1.54 3.02 0 3.58 1.99 3.58 4.58v5.59z"/>
+            </svg>
+            LinkedIn
+        </a>
+    </div>
 </header>
 
 <div class="container">
@@ -89,14 +178,12 @@ header img {
 <div class="section">
     <h2>👨‍💻 Perfil Profesional</h2>
     <p>
-        Desarrollador web en formación con enfoque en creación de aplicaciones modernas, 
-        integración de inteligencia artificial y automatización de procesos.
-        Manejo tecnologías como HTML, CSS, JavaScript, PHP y MySQL.
+        Desarrollador web en formación con enfoque en aplicaciones modernas, inteligencia artificial y automatización.
+        Manejo HTML, CSS, JavaScript, PHP y MySQL.
         <br><br>
-        Cuento con 3 años de experiencia en atención al cliente internacional, lo que fortalece 
-        mis habilidades de comunicación, resolución de problemas y trabajo en equipo.
+        3 años de experiencia en atención al cliente internacional, con habilidades en comunicación, resolución de problemas y trabajo en equipo.
         <br><br>
-        Apasionado por la innovación y el uso de IA para crear soluciones reales y eficientes.
+        Apasionado por crear soluciones tecnológicas reales utilizando IA.
     </p>
 </div>
 
@@ -111,7 +198,7 @@ header img {
         <span class="badge">Git & GitHub</span>
         <span class="badge">APIs</span>
         <span class="badge">ChatGPT / IA</span>
-        <span class="badge">Node.js (básico)</span>
+        <span class="badge">Node.js</span>
     </div>
 
     <div>
@@ -133,10 +220,10 @@ header img {
     Duración: 3 años</p>
 
     <ul>
-        <li>Gestión de clientes en entornos internacionales</li>
-        <li>Resolución de problemas y manejo de quejas</li>
-        <li>Uso de CRM y sistemas internos</li>
-        <li>Trabajo con equipos multiculturales</li>
+        <li>Gestión de clientes internacionales</li>
+        <li>Resolución de incidencias</li>
+        <li>Uso de CRM</li>
+        <li>Trabajo en equipo multicultural</li>
     </ul>
 </div>
 
@@ -145,19 +232,19 @@ header img {
 
     <p>
         <strong>Red Social en Tiempo Real</strong><br>
-        Plataforma con chat en vivo, salas y comunicación en tiempo real.
+        Chat en vivo, salas y comunicación en tiempo real.
         <br>
         <a href="https://cyan-ibis-409465.hostingersite.com/" target="_blank">Ver proyecto</a>
     </p>
 
     <p>
-        <strong>Asistente Inteligente con IA</strong><br>
-        Aplicación web que integra inteligencia artificial para automatizar tareas y generar contenido.
+        <strong>Asistente con IA</strong><br>
+        Automatización y generación de contenido usando inteligencia artificial.
     </p>
 
     <p>
         <strong>Portfolio Web</strong><br>
-        Proyectos frontend como veterinaria, reproductor MP3 y calculadora.
+        Proyectos frontend: veterinaria, reproductor MP3 y calculadora.
     </p>
 </div>
 
@@ -172,22 +259,22 @@ header img {
 
     <p>
         <strong>Bachiller Académico</strong><br>
-        Institución Educativa Jorge Eliécer Gaitán (Preescolar a grado 11)<br>
-        Graduación oficial: Institución Educativa Jimeno Rivera (2017)
+        Institución Educativa Jorge Eliécer Gaitán (Preescolar a 11)<br>
+        Graduación: Institución Educativa Jimeno Rivera (2017)
     </p>
 </div>
 
 <div class="section">
     <h2>🌎 Idiomas</h2>
-    <p>Inglés: Nivel básico (lectura y comunicación funcional)</p>
+    <p>Inglés: Nivel básico</p>
 </div>
 
 <div class="section">
     <h2>⚡ Información Adicional</h2>
     <ul>
         <li>Disponibilidad inmediata</li>
-        <li>Aprendizaje rápido y autónomo</li>
-        <li>Interés en desarrollo web, backend e inteligencia artificial</li>
+        <li>Aprendizaje autónomo</li>
+        <li>Interés en desarrollo web e IA</li>
     </ul>
 </div>
 
@@ -195,4 +282,3 @@ header img {
 
 </body>
 </html>
-```
