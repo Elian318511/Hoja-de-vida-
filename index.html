@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -13,7 +14,6 @@ body {
     color: #333;
 }
 
-/* HEADER */
 header {
     background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: white;
@@ -26,25 +26,14 @@ header img {
     height: 120px;
     border-radius: 50%;
     border: 4px solid white;
-    margin-bottom: 10px;
 }
 
-header h1 {
-    margin: 10px 0 5px;
-}
-
-header p {
-    margin: 5px 0;
-}
-
-/* CONTAINER */
 .container {
     max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
 }
 
-/* SECTIONS */
 .section {
     background: white;
     padding: 20px;
@@ -55,24 +44,12 @@ header p {
 
 .section h2 {
     color: #2a5298;
-    margin-bottom: 10px;
 }
 
-/* GRID */
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-a {
-    color: #2a5298;
-    text-decoration: none;
-    font-weight: bold;
 }
 
 .badge {
@@ -85,7 +62,6 @@ a {
     font-size: 12px;
 }
 
-/* RESPONSIVE */
 @media(max-width: 768px){
     .grid {
         grid-template-columns: 1fr;
@@ -102,28 +78,28 @@ a {
     <p>💻 Desarrollador Web | IA | Automatización</p>
     <p>📞 3176293739 | 📧 eliancontreras089@gmail.com</p>
     <p>📍 Ibagué, Colombia</p>
-    <a href="https://github.com/Elian318511" target="_blank">GitHub</a> |
-    <a href="https://linkedin.com/in/elian-contreras-5a6619347/" target="_blank">LinkedIn</a>
+    <p>
+        <a href="https://github.com/Elian318511" target="_blank" style="color:white;">GitHub</a> |
+        <a href="https://linkedin.com/in/elian-contreras-5a6619347/" target="_blank" style="color:white;">LinkedIn</a>
+    </p>
 </header>
 
 <div class="container">
 
-<!-- PERFIL -->
 <div class="section">
     <h2>👨‍💻 Perfil Profesional</h2>
     <p>
-        Desarrollador web en formación en el SENA con enfoque en creación de aplicaciones modernas, 
-        integración de inteligencia artificial y automatización de procesos. 
+        Desarrollador web en formación con enfoque en creación de aplicaciones modernas, 
+        integración de inteligencia artificial y automatización de procesos.
         Manejo tecnologías como HTML, CSS, JavaScript, PHP y MySQL.
         <br><br>
-        Cuento con 3 años de experiencia en atención al cliente internacional, lo que fortalece mis habilidades 
-        de comunicación, resolución de problemas y trabajo en equipo.
+        Cuento con 3 años de experiencia en atención al cliente internacional, lo que fortalece 
+        mis habilidades de comunicación, resolución de problemas y trabajo en equipo.
         <br><br>
-        Apasionado por la innovación, especialmente en el uso de IA para crear soluciones reales y eficientes.
+        Apasionado por la innovación y el uso de IA para crear soluciones reales y eficientes.
     </p>
 </div>
 
-<!-- HABILIDADES -->
 <div class="section grid">
     <div>
         <h2>⚙️ Habilidades Técnicas</h2>
@@ -151,11 +127,11 @@ a {
     </div>
 </div>
 
-<!-- EXPERIENCIA -->
 <div class="section">
     <h2>💼 Experiencia Laboral</h2>
-    <h3>Atención al Cliente Internacional</h3>
-    <p><strong>Duración:</strong> 3 años</p>
+    <p><strong>Atención al Cliente Internacional</strong><br>
+    Duración: 3 años</p>
+
     <ul>
         <li>Gestión de clientes en entornos internacionales</li>
         <li>Resolución de problemas y manejo de quejas</li>
@@ -164,53 +140,54 @@ a {
     </ul>
 </div>
 
-<!-- PROYECTOS -->
 <div class="section">
     <h2>🚀 Proyectos Destacados</h2>
 
     <p>
-        <strong>🔴 Red Social en Tiempo Real</strong><br>
-        Plataforma con chat en vivo, salas y comunicación en tiempo real usando tecnologías modernas.
+        <strong>Red Social en Tiempo Real</strong><br>
+        Plataforma con chat en vivo, salas y comunicación en tiempo real.
         <br>
         <a href="https://cyan-ibis-409465.hostingersite.com/" target="_blank">Ver proyecto</a>
     </p>
 
     <p>
-        <strong>🤖 Asistente Inteligente con IA</strong><br>
-        Aplicación web que integra ChatGPT para automatizar tareas, responder preguntas y generar contenido.
+        <strong>Asistente Inteligente con IA</strong><br>
+        Aplicación web que integra inteligencia artificial para automatizar tareas y generar contenido.
     </p>
 
     <p>
-        <strong>🎨 Portfolio Web</strong><br>
-        Proyectos como veterinaria, reproductor MP3 y calculadora usando HTML, CSS y JavaScript.
+        <strong>Portfolio Web</strong><br>
+        Proyectos frontend como veterinaria, reproductor MP3 y calculadora.
     </p>
 </div>
 
-<!-- EDUCACIÓN -->
 <div class="section">
     <h2>🎓 Educación</h2>
 
-    <p><strong>Técnico en Programación y Servicios para la Nube</strong><br>
-    SENA (2024 - 2025)</p>
+    <p>
+        <strong>Técnico en Programación y Servicios para la Nube</strong><br>
+        SENA<br>
+        2024 – 2025
+    </p>
 
-    <p><strong>Bachiller Académico</strong><br>
-    Colegio Jorge Eliecer Gaitán (2017)</p>
-
+    <p>
+        <strong>Bachiller Académico</strong><br>
+        Institución Educativa Jorge Eliécer Gaitán (Preescolar a grado 11)<br>
+        Graduación oficial: Institución Educativa Jimeno Rivera (2017)
+    </p>
 </div>
 
-<!-- IDIOMAS -->
 <div class="section">
     <h2>🌎 Idiomas</h2>
     <p>Inglés: Nivel básico (lectura y comunicación funcional)</p>
 </div>
 
-<!-- EXTRA -->
 <div class="section">
     <h2>⚡ Información Adicional</h2>
     <ul>
         <li>Disponibilidad inmediata</li>
         <li>Aprendizaje rápido y autónomo</li>
-        <li>Interés en desarrollo web, backend e IA</li>
+        <li>Interés en desarrollo web, backend e inteligencia artificial</li>
     </ul>
 </div>
 
@@ -218,3 +195,4 @@ a {
 
 </body>
 </html>
+```
